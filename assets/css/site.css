@@ -1,0 +1,159 @@
+/* Fonts: Funnel Display + Funnel Sans (SIL Open Font License, see assets/fonts/OFL.txt), self-hosted */
+@font-face{font-family:'Funnel Display';font-style:normal;font-display:swap;font-weight:300 800;src:url(../fonts/funnel-display-latin-wght-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Funnel Display';font-style:normal;font-display:swap;font-weight:300 800;src:url(../fonts/funnel-display-latin-ext-wght-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Funnel Sans';font-style:normal;font-display:swap;font-weight:300 800;src:url(../fonts/funnel-sans-latin-wght-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Funnel Sans';font-style:normal;font-display:swap;font-weight:300 800;src:url(../fonts/funnel-sans-latin-ext-wght-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+
+body{margin:0;background:#12241E}
+a{color:#8A1F44}a:hover{color:#6E1735}
+.hna{font-family:'Funnel Sans',ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:#12241E;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.hna *{box-sizing:border-box}
+.hna h1,.hna h2,.hna h3,.hna .hna-disp{font-family:'Funnel Display','Funnel Sans',ui-sans-serif,system-ui,sans-serif;text-wrap:balance}
+.hna p{text-wrap:pretty}
+.hna a{text-decoration:none}
+.hna-i{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.hna-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- time-based motion ---------- */
+@keyframes hna-in{from{opacity:0;translate:0 28px}to{opacity:1;translate:0 0}}
+.hna-in{animation:hna-in .9s cubic-bezier(.2,.7,.2,1) both}
+.hna-d1{animation-delay:.08s}.hna-d2{animation-delay:.2s}.hna-d3{animation-delay:.32s}.hna-d4{animation-delay:.44s}.hna-d5{animation-delay:.9s}
+@keyframes hna-words{0%,16%{transform:translateY(0)}20%,36%{transform:translateY(-1.15em)}40%,56%{transform:translateY(-2.3em)}60%,76%{transform:translateY(-3.45em)}80%,96%{transform:translateY(-4.6em)}100%{transform:translateY(-5.75em)}}
+.hna-words{animation:hna-words 12s cubic-bezier(.76,0,.24,1) 1.6s infinite}
+@keyframes hna-draw{from{stroke-dashoffset:420}to{stroke-dashoffset:0}}
+.hna-squig{fill:none;stroke:#F2C4D2;stroke-width:9;stroke-linecap:round;stroke-dasharray:420;animation:hna-draw 1.1s cubic-bezier(.6,0,.2,1) 1.1s both}
+@keyframes hna-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.hna-float{animation:hna-float 6s ease-in-out infinite}
+.hna-float2{animation:hna-float 7s ease-in-out 1.4s infinite}
+.hna-float3{animation:hna-float 8s ease-in-out .6s infinite}
+.hna-float4{animation:hna-float 6.5s ease-in-out 2.1s infinite}
+@keyframes hna-spin{to{transform:rotate(360deg)}}
+.hna-spin{animation:hna-spin 24s linear infinite}
+@keyframes hna-marquee{to{transform:translateX(-50%)}}
+.hna-marquee{animation:hna-marquee 70s linear infinite}
+@keyframes hna-marquee-r{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+.hna-marquee-r{animation:hna-marquee-r 60s linear infinite}
+@keyframes hna-pulse{0%{box-shadow:0 0 0 0 rgba(46,159,90,.55)}70%{box-shadow:0 0 0 9px rgba(46,159,90,0)}100%{box-shadow:0 0 0 0 rgba(46,159,90,0)}}
+.hna-pulse{animation:hna-pulse 2s ease-out infinite}
+@keyframes hna-quote{0%{opacity:0;transform:translateY(18px)}4%,30%{opacity:1;transform:none}34%,100%{opacity:0;transform:translateY(-18px)}}
+.hna-q{animation:hna-quote 18s ease-in-out infinite both}
+.hna-q2{animation-delay:6s}.hna-q3{animation-delay:12s}
+@keyframes hna-bar{0%{transform:scaleX(0)}33.3%{transform:scaleX(1)}33.4%,100%{transform:scaleX(0)}}
+.hna-bar{transform-origin:left center;animation:hna-bar 18s linear infinite both}
+.hna-b2{animation-delay:6s}.hna-b3{animation-delay:12s}
+
+/* ---------- hero: chaos into order ---------- */
+@keyframes hna-jit{0%{transform:translate(0,0) rotate(-7deg)}20%{transform:translate(3px,-8px) rotate(6deg)}40%{transform:translate(-4px,3px) rotate(-3deg)}60%{transform:translate(2px,7px) rotate(9deg)}80%{transform:translate(-3px,-3px) rotate(-11deg)}100%{transform:translate(0,0) rotate(-7deg)}}
+@keyframes hna-wght{0%,100%{font-weight:300}50%{font-weight:800}}
+.hna-ch{display:inline-block;animation:hna-jit 2.2s ease-in-out infinite,hna-wght 3.1s ease-in-out infinite}
+.hna-ch:nth-child(2){animation-duration:1.7s,2.6s;animation-delay:-.4s,-1.1s}
+.hna-ch:nth-child(3){animation-duration:2.6s,3.6s;animation-delay:-1.2s,-.3s}
+.hna-ch:nth-child(4){animation-duration:1.9s,2.9s;animation-delay:-.8s,-2s}
+.hna-ch:nth-child(5){animation-duration:2.4s,3.3s;animation-delay:-1.6s,-.7s}
+.hna-ch:nth-child(6){animation-duration:2s,2.7s;animation-delay:-.2s,-1.5s}
+@keyframes hna-pop{0%{transform:scale(0) rotate(-40deg)}70%{transform:scale(1.18) rotate(6deg)}100%{transform:scale(1) rotate(0)}}
+.hna-pop{animation:hna-pop .6s cubic-bezier(.2,.8,.2,1.2) 1.7s both}
+@keyframes hna-tickd{from{stroke-dashoffset:40}to{stroke-dashoffset:0}}
+.hna-tick{stroke-dasharray:40;animation:hna-tickd .45s ease-out 2.05s both}
+@keyframes hna-deal{from{opacity:0;transform:translateY(180px) rotate(var(--hna-r,16deg)) scale(.82)}to{opacity:1;transform:none}}
+.hna-deal{animation:hna-deal 1.2s cubic-bezier(.2,.8,.2,1) both}
+.hna-dl1{animation-delay:.3s}.hna-dl2{animation-delay:.45s}.hna-dl3{animation-delay:.6s}.hna-dl4{animation-delay:.8s}
+@keyframes hna-drift{0%,100%{transform:translate(0,0) rotate(0)}25%{transform:translate(10px,-14px) rotate(5deg)}50%{transform:translate(-8px,-4px) rotate(-4deg)}75%{transform:translate(6px,10px) rotate(6deg)}}
+.hna-doc{animation:hna-drift 9s ease-in-out infinite}
+.hna-doc2{animation-duration:11s;animation-delay:-3s}
+.hna-doc3{animation-duration:8s;animation-delay:-5s}
+@keyframes hna-orb{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-70px,50px) scale(1.15)}}
+.hna-orb{animation:hna-orb 14s ease-in-out infinite}
+@keyframes hna-sway{0%,100%{transform:rotate(-4deg) scale(1)}50%{transform:rotate(3deg) scale(1.05)}}
+.hna-sway{animation:hna-sway 16s ease-in-out infinite}
+.hna-pc{transition:rotate .5s cubic-bezier(.2,.8,.2,1),scale .5s cubic-bezier(.2,.8,.2,1)}
+.hna-pc:hover{rotate:0deg !important;scale:1.06;z-index:9 !important}
+
+/* ---------- scroll-driven motion (transform only, so content never hides) ---------- */
+@property --hna-n{syntax:'<integer>';inherits:false;initial-value:300}
+.hna-num{--hna-n:300;counter-reset:hnan var(--hna-n)}
+.hna-num::before{content:counter(hnan)}
+@keyframes hna-count{from{--hna-n:0}to{--hna-n:300}}
+@keyframes hna-rise{from{translate:0 64px;scale:.97}to{translate:0 0;scale:1}}
+@keyframes hna-unclip{from{clip-path:inset(10% 7% 10% 7% round 28px)}to{clip-path:inset(0 0 0 0 round 28px)}}
+@keyframes hna-par{from{transform:translateY(-9%)}to{transform:translateY(9%)}}
+@keyframes hna-slide{from{translate:-6% 0}to{translate:0 0}}
+@keyframes hna-spa{to{translate:-60px -40px}}
+@keyframes hna-spb{to{translate:60px -50px}}
+@keyframes hna-spc{to{translate:50px 50px}}
+@keyframes hna-spd{to{translate:0 -30px}}
+@supports (animation-timeline: view()){
+.hna-rise{animation:hna-rise linear both;animation-timeline:view();animation-range:entry 0% entry 85%}
+.hna-unclip{animation:hna-unclip linear both;animation-timeline:view();animation-range:entry 0% cover 40%}
+.hna-par{animation:hna-par linear both;animation-timeline:view();animation-range:cover 0% cover 100%}
+.hna-num{animation:hna-count linear both;animation-timeline:view();animation-range:entry 20% cover 45%}
+.hna-slide{animation:hna-slide linear both;animation-timeline:view();animation-range:entry 0% cover 60%}
+.hna-spa{animation:hna-spa linear both;animation-timeline:view();animation-range:exit 0% exit 100%}
+.hna-spb{animation:hna-spb linear both;animation-timeline:view();animation-range:exit 0% exit 100%}
+.hna-spc{animation:hna-spc linear both;animation-timeline:view();animation-range:exit 0% exit 100%}
+.hna-spd{animation:hna-spd linear both;animation-timeline:view();animation-range:exit 0% exit 100%}
+}
+
+/* ---------- hovers ---------- */
+.hna-btn{transition:transform .25s ease,background-color .25s ease,box-shadow .25s ease,color .25s ease,border-color .25s ease}
+.hna-btn:hover{transform:translateY(-2px);box-shadow:0 14px 28px -14px rgba(0,0,0,.55)}
+.hna-btn .hna-arr{transition:transform .25s ease}
+.hna-btn:hover .hna-arr{transform:translateX(4px)}
+.hna-ghost:hover{background:#12241E !important;color:#F6F2EA !important}
+.hna-ghost-d:hover{background:#F6F2EA !important;color:#12241E !important;border-color:#F6F2EA !important}
+.hna-link{background:linear-gradient(currentColor,currentColor) 0 100%/0 1.5px no-repeat;transition:background-size .3s ease;padding-bottom:3px}
+.hna-link:hover{background-size:100% 1.5px}
+.hna-card{transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s ease}
+.hna-card:hover{transform:translateY(-6px);box-shadow:0 30px 60px -30px rgba(18,36,30,.45)}
+.hna-zoom{transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.hna-card:hover .hna-zoom{transform:scale(1.07)}
+.hna-card .hna-arr{transition:transform .3s ease}
+.hna-card:hover .hna-arr{transform:translate(3px,-3px)}
+.hna-chip{transition:background-color .2s ease,color .2s ease,transform .2s ease}
+.hna-chip:hover{background:#F2C4D2 !important;color:#12241E !important;transform:translateY(-2px)}
+.hna-field:focus{outline:3px solid #F2C4D2;outline-offset:1px;border-color:#8A1F44 !important}
+
+/* ---------- motion off ---------- */
+.hna-still *,.hna-still *::before,.hna-still *::after{animation:none !important}
+.hna-still .hna-q2,.hna-still .hna-q3{display:none}
+@media (prefers-reduced-motion: reduce){
+.hna *,.hna *::before,.hna *::after{animation:none !important;transition:none !important}
+.hna .hna-q2,.hna .hna-q3{display:none}
+}
+
+/* ---------- small screens ---------- */
+@media (max-width: 920px){
+.hna-hero,.hna-two{grid-template-columns:1fr !important}
+.hna-bento{grid-template-columns:1fr !important}
+.hna-bento > *{grid-column:auto !important}
+.hna-navlinks{order:3;width:100%;justify-content:flex-start !important}
+.hna-inset{right:10px !important;bottom:-20px !important;width:64% !important}
+.hna-pin{max-width:460px;margin:24px auto 0}
+.hna-hide-sm{display:none !important}
+.hna-toast{left:0 !important;width:84% !important}
+.hna-qmark{margin-top:48px}
+}
+
+/* ---------- site extras (not in the canvas) ---------- */
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+.hna-skip{position:absolute;left:16px;top:-80px;z-index:100;padding:12px 18px;border-radius:12px;background:#F2C4D2;color:#12241E !important;font-weight:700;transition:top .2s ease}
+.hna-skip:focus{top:12px}
+.hna a:focus-visible,.hna button:focus-visible{outline:3px solid #F2C4D2;outline-offset:3px;border-radius:6px}
+.hna-header{transition:box-shadow .3s ease,background-color .3s ease}
+.hna-header.is-scrolled{box-shadow:0 10px 30px -12px rgba(0,0,0,.55);background:rgba(18,36,30,.94) !important}
+.hna-menubtn{display:none;place-items:center;width:46px;height:46px;border:1px solid rgba(246,242,234,.22);border-radius:14px;background:transparent;color:#F6F2EA;cursor:pointer}
+.hna-menubtn .hna-x{display:none}
+.hna-nav-open .hna-menubtn .hna-x{display:block}
+.hna-nav-open .hna-menubtn .hna-bars{display:none}
+.hna-form-note{margin:0;font-size:13px;line-height:1.5;color:#4A5A53}
+@media (max-width: 920px){
+.hna-menubtn{display:inline-grid}
+.hna-navlinks{display:none !important;flex-direction:column;align-items:flex-start !important;gap:0 !important;padding:6px 0 10px;border-top:1px solid rgba(246,242,234,.1)}
+.hna-nav-open .hna-navlinks{display:flex !important}
+.hna-navlinks a{display:block;width:100%;padding:12px 0 !important;font-size:19px;background:none !important}
+}
+@media (max-width: 560px){
+.hna-hdr-phone,.hna-hdr-cta{display:none !important}
+}
+
