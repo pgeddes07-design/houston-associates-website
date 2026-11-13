@@ -43,10 +43,10 @@ a{color:#8A1F44}a:hover{color:#6E1735}
 @keyframes hnb-rise{from{translate:0 26px;scale:.985}to{translate:0 0;scale:1}}
 @keyframes hnb-word{from{color:#C3BCB0}to{color:#12241E}}
 @keyframes hnb-popin{from{opacity:0;transform:translateY(14px) scale(.94)}to{opacity:1;transform:none}}
-@keyframes hnb-lfirst{0%,68%{opacity:1}82%,100%{opacity:0}}
-@keyframes hnb-lmid{0%,22%{opacity:0}34%,68%{opacity:1}82%,100%{opacity:0}}
-@keyframes hnb-llast{0%,22%{opacity:0}34%,100%{opacity:1}}
-@keyframes hnb-emph{0%{opacity:.28}30%,68%{opacity:1}100%{opacity:.28}}
+@keyframes hnb-lfirst{0%,62%{opacity:1}67%,100%{opacity:0}}
+@keyframes hnb-lmid{0%,33%{opacity:0}38%,62%{opacity:1}67%,100%{opacity:0}}
+@keyframes hnb-llast{0%,33%{opacity:0}38%,100%{opacity:1}}
+@keyframes hnb-emph{0%,24%{opacity:.28}36%,64%{opacity:1}76%,100%{opacity:.28}}
 @keyframes hnb-railmove{from{transform:translateX(6%)}to{transform:translateX(-38%)}}
 @keyframes hnb-par{from{transform:translateY(-6%) scale(1.08)}to{transform:translateY(6%) scale(1.08)}}
 @supports (animation-timeline: view()){
@@ -114,6 +114,10 @@ a{color:#8A1F44}a:hover{color:#6E1735}
 .hnb-b1-wrap{left:-8px !important}
 .hnb-b2-wrap{right:-8px !important}
 .hnb-num{font-size:84px !important}
+.hnb-team-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:12px !important}
+.hnb-role{display:none}
+.hnb-team-grid figcaption{left:10px !important;right:10px !important;bottom:10px !important;gap:6px !important}
+.hnb-team-grid figcaption span{font-size:12px !important;padding:7px 10px !important}
 }
 
 html{scroll-behavior:smooth;scroll-padding-top:90px}
