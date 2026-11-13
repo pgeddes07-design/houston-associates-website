@@ -16,6 +16,14 @@ One fast static page. No build step, no framework, no tracking scripts.
 | `assets/img/` | Photos (WebP), the H monogram, icons and the social share image |
 | `favicon.ico`, `favicon-32.png`, `apple-touch-icon.png`, `site.webmanifest` | Browser and phone icons |
 | `robots.txt`, `sitemap.xml` | For search engines |
+| `version-b/` | Version B: an alternative homepage design to compare against. Hidden from search engines. Delete the folder once a version is picked. |
+
+## Comparing the two versions
+
+With GitHub Pages switched on (Settings, then Pages, then deploy from the `main` branch, root folder):
+
+- Version A: https://pgeddes07-design.github.io/houston-associates-website/
+- Version B: https://pgeddes07-design.github.io/houston-associates-website/version-b/
 
 ## Run it locally
 
