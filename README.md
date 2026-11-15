@@ -24,6 +24,13 @@ With GitHub Pages switched on (Settings, then Pages, then deploy from the `main`
 
 - Version A: https://pgeddes07-design.github.io/houston-associates-website/
 - Version B: https://pgeddes07-design.github.io/houston-associates-website/version-b/
+- Logo options: https://pgeddes07-design.github.io/houston-associates-website/logos/
+
+## Logo options page
+
+`logos/` holds 151 logo ideas for review. Options 1 to 6 are full concepts built in HTML with self-hosted fonts (`logos/fonts/`, SIL Open Font License). Options 7 to 151 are quick sketches stored as WebP in `logos/img/` (`NNN.webp` thumbnails, `NNN-lg.webp` for the big view, `manifest.json` for groups and sizes).
+
+Visitors tap a heart to favourite an option. Favourites are saved in the browser (localStorage) and can be sent on WhatsApp, by email or copied. The message includes a link like `logos/#picks=4,17,102`, which opens the page showing only those picks. The page is `noindex` and is not in the sitemap.
 
 ## Run it locally
 
